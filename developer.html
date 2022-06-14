@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devlopers Community</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="developer.css">
+</head>
+<body>
+
+    <section class="nav_sec">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <h1 style="text-align:center !important;">DEVELOPERS COMMUNITY</h1>
+          </nav>
+    </section>
+
+    <section class="community-section">
+        <div class="community row">
+            <div class="notes col-md-6">
+                <h1 class="commu-title">
+                    <span>Home</span> for tech <br/>
+                    writers and <br/>
+                    readers <br/>                
+                    <br/>
+                    <div class="join">
+                        <h4>Own Your Content · Share Ideas</h4>
+                        <button id="btn">Get Started</button>
+                    </div>
+                </h1>
+            </div>
+
+            <div class="img-commu col-md-6">
+                <img src="banner.png" alt="" class="banner">
+            </div>
+        </div>
+    </section>
+
+    <section class="form-sec">
+        <div class="form-div">            
+                <form id="contact" action="" method="post">
+                    <div class="container">  
+                        <div class="close-open">
+                            <span class="close" onClick="closetab()"><i class="fa-solid fa-xmark"></i></span>
+                        </div>
+                  <h6>SUBMIT YOUR DOCUMENT</h6>                  
+                  <fieldset>
+                    <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Name or Title" type="text" tabindex="2" required>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+                  </fieldset>
+                  <fieldset>
+                        <input type="file" value="upload your document" required>
+                  </fieldset>
+                  <fieldset>
+                    <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                  </fieldset>
+                  <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                  </fieldset>
+                  <p class="copyright">Designed by <a href="https://github.com/Nithish14R" target="_blank" title="Colorlib">Nithish.R</a></p>
+                </form>
+              </div>
+        </div>
+    </section>
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    const show=document.getElementById('btn');
+
+    show.addEventListener('click',()=>{
+        document.querySelector('.form-sec').style.display="block";        
+        document.querySelector('.community-section').style.filter="blur(5px)"
+    })
+
+    function closetab(){
+        document.querySelector('.form-sec').style.display="none";
+       document.querySelector('.community-section').style.filter="blur(0)";
+      
+       
+
+    }
+</script>
+</body>
+</html>
